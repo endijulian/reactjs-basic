@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import StateProps from './StateProps';
+import Lifecycle from './Lifecycle';
+// import Map from './Map';
+// import StateProps from './StateProps';
 // import App from './App';
 // import Variabel from './Variabel';
 
@@ -9,6 +11,8 @@ root.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <Variabel></Variabel> */}
-    <StateProps></StateProps>
+    {/* <StateProps></StateProps> */}
+    {/* <Map></Map> */}
+    <Lifecycle></Lifecycle>
   </React.StrictMode>
 );

@@ -18,7 +18,7 @@ import React from 'react'
 //   }
 // }
 
-//Const Component / Arrow Function
+//Const Component(rafce) / Arrow Function(rafce)
 //  const Navbar = () => {
 //   return (
 //     <div>Navbar</div>
@@ -27,7 +27,7 @@ import React from 'react'
 
 // export default Navbar
 
-//const component tanpa export default
+//const component tanpa export default (rfce)
 export const Navbar = () => {
     return (
       <div>Navbar</div>
