@@ -1,8 +1,8 @@
 // import Navbar from "./Navbar";
 
 //import component tanpa export default
-import Header from "./Header";
-import {Navbar} from "./Navbar";
+import Header from "./react-dasar/Header";
+import {Navbar} from "./react-dasar/Navbar";
 
 function App() {
   return (
