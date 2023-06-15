@@ -1,17 +1,10 @@
 import React from "react";
-import {
-  NavDropdown,
-  Navbar,
-  Nav,
-  Container,
-  Button,
-  Form,
-} from "react-bootstrap";
+import { NavDropdown, Navbar, Nav, Button, Form } from "react-bootstrap";
 
 const NavbarComponent = () => {
   return (
-    <Navbar bg="light" expand="lg">
-      <Container fluid>
+    <Navbar bg="dark" variant="dark" expand="lg">
+      <div className="container">
         <Navbar.Brand href="#">CRUD React Js</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -46,7 +39,7 @@ const NavbarComponent = () => {
             <Button variant="outline-success">Search</Button>
           </Form>
         </Navbar.Collapse>
-      </Container>
+      </div>
     </Navbar>
   );
 };
