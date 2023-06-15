@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row, Button, Form } from "react-bootstrap";
 
-const Formulir = () => {
+const Formulir = ({ nama, description, harga, handleChange, handleSubmit }) => {
   return (
     <div className="mt-5">
       <Row>
@@ -13,13 +13,19 @@ const Formulir = () => {
 
       <Row>
         <Col>
-          <Form>
+          <Form onSubmit={handleSubmit}>
             <Form.Group as={Row} className="mb-3" controlId="nama">
               <Form.Label column sm={2}>
                 Nama Makanan
               </Form.Label>
               <Col sm={10}>
-                <Form.Control type="text" placeholder="Nama makanan...." />
+                <Form.Control
+                  name="nama"
+                  value={nama}
+                  onChange={(event) => handleChange(event)}
+                  type="text"
+                  placeholder="Nama makanan...."
+                />
               </Col>
             </Form.Group>
 
@@ -30,6 +36,9 @@ const Formulir = () => {
               <Col sm={10}>
                 <Form.Control
                   as="textarea"
+                  name="description"
+                  value={description}
+                  onChange={(event) => handleChange(event)}
                   placeholder="description"
                   style={{ height: "100px" }}
                 />
@@ -41,7 +50,13 @@ const Formulir = () => {
                 Harga
               </Form.Label>
               <Col sm={10}>
-                <Form.Control type="number" placeholder="Rp.0" />
+                <Form.Control
+                  type="number"
+                  name="harga"
+                  value={harga}
+                  onChange={(event) => handleChange(event)}
+                  placeholder="Rp.0"
+                />
               </Col>
             </Form.Group>
 
